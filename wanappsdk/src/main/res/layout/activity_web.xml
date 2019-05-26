@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_layout"
+        android:id="@+id/title_layout"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@color/light_grey_text"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/title_tips"
+        android:layout_below="@id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="继续观看20s算作有效阅读"/>
+    <WebView
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/title_tips"
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:id="@+id/buttom_layout"
+            android:background="@color/light_grey_text"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/notice_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/tips"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

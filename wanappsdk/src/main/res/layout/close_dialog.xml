@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_back">
+
+    <ImageView
+        android:id="@+id/close_image"
+        android:layout_gravity="right"
+        android:layout_marginBottom="-20dp"
+        android:src="@mipmap/close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#666666"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统提示"/>
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/main_title"
+        android:lines="2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#7D7D7D"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您当前有其他任务正在进行，
+是否放弃其他任务？"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:background="@drawable/red_back"
+            android:textColor="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="放弃"/>
+
+        <TextView
+            android:id="@+id/btn_comfirm"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:background="@drawable/blue_back"
+            android:textColor="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="不放弃"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/btn_dismiss"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:background="@drawable/green_back"
+            android:textColor="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="取消 "/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/callshow_bottom_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+
+        <RadioButton
+            android:id="@+id/callshow_bottom_home_tab_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_tab_phone"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="电话"
+            android:textColor="@color/bottom_tab_txt"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/callshow_bottom_home_tab_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_tab_call"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="视频秀"
+            android:textColor="@color/bottom_tab_txt"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/callshow_bottom_home_tab_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_tab_news"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="资讯"
+            android:textColor="@color/bottom_tab_txt"
+            android:textSize="10sp"/>
+        <RadioButton
+            android:id="@+id/callshow_bottom_home_tab_4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_tab_money"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="我的"
+            android:textColor="@color/bottom_tab_txt"
+            android:textSize="10sp"/>
+        <RadioButton
+            android:id="@+id/callshow_bottom_home_tab_5"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/selector_tab_mine"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="我的"
+            android:textColor="@color/bottom_tab_txt"
+            android:textSize="10sp"/>
+    </RadioGroup>
+
+
+</LinearLayout>

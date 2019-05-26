@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+   <TextView
+       android:layout_marginTop="12dp"
+       android:id="@+id/step_number"
+       android:textSize="10sp"
+       android:gravity="center"
+       android:textColor="@color/white"
+       android:layout_width="10dp"
+       android:layout_height="10dp"
+       android:background="@drawable/round_ori"/>
+    <View
+        android:visibility="gone"
+        android:id="@+id/line"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/step_number"
+        android:background="#FF6F00"
+        android:layout_width="2dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:lines="1"
+        android:id="@+id/step_descrip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/step_number"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首次安装使用"/>
+
+   <LinearLayout
+       android:layout_marginTop="5dp"
+       android:paddingRight="10dp"
+       android:layout_toRightOf="@id/step_descrip"
+       android:layout_marginLeft="5dp"
+       android:id="@+id/tags"
+       android:orientation="horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <TextView
+        android:padding="2dp"
+        android:background="@drawable/light_blue_bac"
+        android:layout_below="@id/app_size"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:id="@+id/app_lable1"
+        android:layout_toRightOf="@id/app_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:visibility="invisible"
+        android:padding="2dp"
+        android:background="@drawable/grey_bac"
+        android:layout_below="@id/app_size"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:id="@+id/app_lable2"
+        android:layout_toRightOf="@id/app_lable1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:visibility="gone"
+        android:padding="2dp"
+        android:background="@drawable/grey_bac"
+        android:layout_below="@id/app_size"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:id="@+id/app_lable3"
+        android:layout_toRightOf="@id/app_lable1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+   </LinearLayout>
+
+
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="100dp"
+        android:maxLines="2"
+        android:layout_below="@id/tags"
+        android:id="@+id/step_descripe"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/step_number"
+        android:textColor="@color/light_grey_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过应用市场下载APP"/>
+    <TextView
+        android:id="@+id/step_money"
+        android:textColor="@color/color_light_red"
+        android:textSize="18sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1.5元"/>
+
+   <ImageView
+       android:visibility="gone"
+       android:layout_marginRight="10dp"
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:src="@mipmap/right_arrow"/>
+
+
+    <TextView
+        android:textColor="@color/light_grey_text"
+        android:textSize="10sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/step_money"
+        android:id="@+id/limitCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余 20"/>
+
+
+
+
+
+
+
+
+
+ <View
+     android:id="@+id/lines"
+     android:layout_alignParentBottom="true"
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="@color/line"/>
+
+
+
+
+</RelativeLayout>

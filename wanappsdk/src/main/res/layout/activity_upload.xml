@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_layout"
+        android:id="@+id/title_layout"/>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/app_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/defaluthead"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/gray_text"
+                    android:textSize="18sp"
+                    android:id="@+id/app_name"
+                    android:layout_toRightOf="@id/app_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/app_name"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/light_grey_text"
+                    android:textSize="14sp"
+                    android:id="@+id/app_size"
+                    android:layout_toRightOf="@id/app_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/app_lable1"
+                    android:id="@+id/getmoney"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#FA5539"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text=""/>
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/app_lable2"
+                    android:padding="2dp"
+                    android:background="@drawable/grey_bac"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#008001"
+                    android:textSize="10sp"
+                    android:id="@+id/app_lable1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="2dp"
+                    android:background="@drawable/grey_bac"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#008001"
+                    android:textSize="10sp"
+                    android:id="@+id/app_lable2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </RelativeLayout>
+            <View
+                android:background="@color/origin_color"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/origin_color"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务说明"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/round_ori"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="任务说明任务说明任务说明任务说明任务说明任务说明任务说明任务说明任务说明"
+                    android:id="@+id/shuoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/copy_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击虚线复制关键字"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/stoke_bac"
+                    android:id="@+id/copy_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京幸运28"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/startapp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/float_buttom"
+                android:text="打开市场"
+                android:layout_width="150dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/qc_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <View
+                android:layout_marginTop="5dp"
+                android:background="#EDEDED"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/comment_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击虚线复制评论内容"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/stoke_bac"
+                    android:id="@+id/comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京幸运28"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@color/origin_color"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注意事项"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/round_ori"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="任务说明任务说明任务说明任务说明任务说明任务说明任务说明任务说明任务说明"
+                    android:id="@+id/notices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@mipmap/default_image"
+                android:id="@+id/images"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:background="#EDEDED"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="@color/origin_color"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截图示例"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:background="@drawable/button_back"
+                    android:padding="5dp"
+                    android:id="@+id/re_select_pic"
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:textColor="#383838"
+                    android:layout_marginTop="10dp"
+                    android:text="重新选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/image_simple_layout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:background="#EDEDED"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/origin_color"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截图上传"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/image_layout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/upload"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/origin_color"
+        android:text="开始任务"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

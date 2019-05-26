@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_layout"/>
+    <com.wanappsdk.ui.view.PagerSlidingTabStrip
+        android:id="@+id/pagerSlidingTabStrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:allowWidthFull="true"
+        android:visibility="gone"
+        app:slidingBlock="@drawable/image_sliding_block1">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="1.5dp"
+            android:paddingTop="1.5dp">
+            <TextView
+                android:visibility="gone"
+                style="@style/text_slidingTabTitle"
+                android:text="推荐"/>
+        </LinearLayout>
+
+    </com.wanappsdk.ui.view.PagerSlidingTabStrip>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

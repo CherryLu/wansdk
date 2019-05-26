@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="blue_color">#2689f7</color>
+    <color name="white">#ffffff</color>
+    <color name="origin_color">#ff9600</color>
+    <color name="origin">#FF6F00</color>
+    <color name="transparent50_0">#80000000</color>
+    <!-- 底部tag栏文字颜色-->
+    <color name="bottom_tab_txt">#737373</color>
+    <color name="line">#e4e4e4</color>
+
+    <color name="color_black">#000000</color>
+
+    <color name="background_tab_pressed">#ffd7d7d7</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_pressed">#ffb5b5b6</color>
+    <color name="color_red">#db1813</color>
+    <color name="color_light_red">#fe3420</color>
+    <color name="color_line_gray">#f4f4f4</color>
+
+    <color name="baseColor">#2689f7</color>
+
+    <color name="gray_text">#3b3b39</color>
+    <color name="light_grey_text">#737373</color>
+    <color name="color_txt_deep_black">#333333</color>
+    <!-- 背景色 -->
+    <color name="default_bg">#f6f6f6</color>
+    <color name="green">#0C7716</color>
+    <color name="txt_black">#191919</color>
+
+
+    <!-- 点击背景 -->
+    <color name="all_click_1">#ffffff</color>
+    <color name="all_click_2">#f2f2f2</color>
+    <!-- TAB文字默认 -->
+    <color name="tab_def">#a2a2a2</color>
+    <!-- TAB高亮 -->
+    <color name="tab_sel">#2689f7</color>
+    <color name="mine_item_press_back">#f0f0f0</color>
+    <color name="list_noclick">#ffffff</color>
+</resources>

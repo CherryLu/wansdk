@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_sliding_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0f85dd">
+        <com.wan.callring.ui.widget.PagerSlidingTabStrip
+            android:id="@+id/pagerSlidingTabStrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:slidingBlock="@drawable/bg_callshow_tag_line">
+            <!--@drawable/image_sliding_block image_sliding_block2-->
+            <LinearLayout
+                android:id="@+id/layout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="1.5dp"
+                android:paddingTop="1.5dp">
+            </LinearLayout>
+        </com.wan.callring.ui.widget.PagerSlidingTabStrip>
+    </RelativeLayout>
+
+    <!--com.gghl.callshow.view.NoScrollViewPager-->
+    <com.wan.callring.ui.widget.NoScrollViewPager
+        android:id="@+id/noscollviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_sliding_bg"
+        android:background="@android:color/white" />
+
+
+</RelativeLayout>

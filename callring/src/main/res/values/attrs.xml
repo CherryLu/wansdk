@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="entrySummaries" format="reference" />
+
+    <declare-styleable name="IjkListPreference">
+        <attr name="entrySummaries" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="slidingBlock" format="reference|color" />
+        <attr name="allowWidthFull" format="boolean" />
+        <attr name="disableViewPager" format="boolean" />
+        <attr name="disableTensileSlidingBlock" format="boolean" />
+        <attr name="bottomLineColor" format="color" />
+        <attr name="bottomLineHeight" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bottom_tab_txt">#707070</color>
+
+    <color name="bottom_tab_txt_s">#1296db</color>
+
+    <color name="white">#ffffff</color>
+</resources>
