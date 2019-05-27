@@ -5,5 +5,5 @@ import android.view.View;
 
 public class BaseFragment extends Fragment {
 
-    public View rootView;
+    public View mRootView;
 }

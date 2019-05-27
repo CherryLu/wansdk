@@ -5,6 +5,7 @@ import android.widget.ImageView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.download.ImageDownloader;
+import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.wan.callring.CallRingManager;
 
 /**
@@ -13,19 +14,18 @@ import com.wan.callring.CallRingManager;
 
 public class GlideUtil {
     //默认加载
-    public static void loadImageView(Context mContext, String path, ImageView mImageView) {
+    public static void loadImageView(String path, ImageView mImageView) {
 
         ImageLoader.getInstance().displayImage(path,mImageView, CallRingManager.options);
 
-       /* RequestBuilder<Drawable> builder = Glide.with(mContext).load(path);
 
-        RequestOptions requestOptions = new RequestOptions();
-        requestOptions.fitCenter();
-        requestOptions.priority(Priority.HIGH);
 
-        builder.apply(requestOptions);
-        builder.into(mImageView);*/
+    }
 
+
+
+    public static void loadImageViewWithListener(String path, ImageView mImageView, ImageLoadingListener listener){
+        ImageLoader.getInstance().displayImage(path,mImageView, CallRingManager.options,listener);
     }
 
 

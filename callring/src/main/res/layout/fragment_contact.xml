@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/native_titile_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    <FrameLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:padding="8dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_address_search_shape">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="4dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:hint="搜索本地通讯录"
+            android:paddingLeft="4dp"
+            android:paddingRight="40dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivClearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="4dp"
+            android:src="@mipmap/clear_button"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <ListView
+        android:id="@+id/lv_addressbook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_below="@id/layoutContainer"
+        android:divider="#c0c0c0"
+        android:dividerHeight="1px"
+        android:scrollbars="none" />
+
+    <com.gghl.callshow.view.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layoutContainer"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tv_nocontact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="没有联系人"
+        android:visibility="invisible" />
+
+</RelativeLayout>

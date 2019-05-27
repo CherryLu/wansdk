@@ -30,14 +30,14 @@ public class MainFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.fragment_mian,container,false);
+        mRootView = inflater.inflate(R.layout.fragment_mian,container,false);
         initView();
-        return rootView;
+        return mRootView;
     }
 
 
     private void initView(){
-        radioGroup = rootView.findViewById(R.id.callshow_bottom_tab_layout);
+        radioGroup = mRootView.findViewById(R.id.callshow_bottom_tab_layout);
 
 
 

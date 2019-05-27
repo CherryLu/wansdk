@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明背景的dialog -->
+    <style name="_dialog_bg" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="_dialog_animation">
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/set_dialog_in</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/set_dialog_out</item>
+    </style>
+</resources>

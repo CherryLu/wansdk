@@ -6,4 +6,10 @@
     <color name="bottom_tab_txt_s">#1296db</color>
 
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="play_list_select2">#bfbfbf</color>
+    <color name="color_orange">#fa7a00</color>
+    <color name="transparent">#00000000</color>
+    <color name="default_line">#e4e4e4</color>
 </resources>

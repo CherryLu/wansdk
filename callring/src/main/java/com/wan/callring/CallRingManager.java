@@ -2,6 +2,7 @@ package com.wan.callring;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.text.TextUtils;
 
 import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
@@ -35,6 +36,8 @@ public class CallRingManager {
 
 
     }
+
+
 
 
     private CallRingManager(Context context) {
