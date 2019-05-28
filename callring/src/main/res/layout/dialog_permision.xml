@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/type_private"
+            android:textColor="@color/bottom_tab_txt"
+            android:text="私密"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/scripe_private"
+            android:textSize="16sp"
+            android:layout_below="@id/type_private"
+            android:textColor="@color/bottom_tab_txt"
+            android:text="仅自己可见"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/check_point_private"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/type_private"
+            android:src="@drawable/point_unselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/type_public"
+            android:textColor="@color/bottom_tab_txt"
+            android:text="公开"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/scripe_public"
+            android:textSize="16sp"
+            android:layout_below="@id/type_public"
+            android:textColor="@color/bottom_tab_txt"
+            android:text="任意被叫可见"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/check_point_public"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/type_public"
+            android:src="@drawable/point_unselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/type"
+            android:textColor="@color/bottom_tab_txt"
+            android:text="部分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/scripe"
+            android:textSize="16sp"
+            android:layout_below="@id/type"
+            android:textColor="@color/bottom_tab_txt"
+            android:text="仅自己可见"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/check_point"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/type"
+            android:src="@drawable/point_unselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:lines="1"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:layout_below="@id/check_point"
+            android:text="小明，小李"
+            android:id="@+id/names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>
