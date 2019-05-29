@@ -15,6 +15,7 @@ public class ContactBean {
     String date;
     int duration;
     String type;
+    boolean hasChose;
     public String simpleNumber;
     public String allPinyin;
     public String pinyin;//模糊搜索使用的名字字母缩写
@@ -87,5 +88,13 @@ public class ContactBean {
 
     public void setAllPinyin(String allPinyin) {
         this.allPinyin = allPinyin;
+    }
+
+    public boolean isHasChose() {
+        return hasChose;
+    }
+
+    public void setHasChose(boolean hasChose) {
+        this.hasChose = hasChose;
     }
 }

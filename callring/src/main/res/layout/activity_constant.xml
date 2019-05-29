@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#0f85dd">
+
+        <!-- 标题栏左边按钮 -->
+        <RelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/icon_back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="选择联系人"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/rl_title"
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:padding="8dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_address_search_shape">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableLeft="@mipmap/search"
+            android:drawablePadding="4dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:hint="搜索本地通讯录"
+            android:paddingLeft="4dp"
+            android:paddingRight="40dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivClearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="4dp"
+            android:src="@mipmap/clear_button"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <ListView
+        android:layout_below="@id/layoutContainer"
+        android:id="@+id/lv_addressbook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:divider="#c0c0c0"
+        android:dividerHeight="1px"
+        android:scrollbars="none" />
+
+    <com.wan.callring.ui.widget.SideBar
+        android:layout_below="@id/layoutContainer"
+        android:id="@+id/sidrbar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tv_nocontact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="没有联系人"
+        android:visibility="invisible" />
+
+</RelativeLayout>

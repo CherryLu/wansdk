@@ -6,12 +6,14 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.wan.callring.R;
 
 public class PermisionDialog extends Dialog implements View.OnClickListener {
 
     private ImageView  check_point_private,check_point_public,check_point;
+    private TextView names;
 
     public PermisionDialog(Context context) {
         super(context);
@@ -39,6 +41,8 @@ public class PermisionDialog extends Dialog implements View.OnClickListener {
         check_point_private.setOnClickListener(this);
         check_point_public.setOnClickListener(this);
         check_point.setOnClickListener(this);
+
+        names = findViewById(R.id.names);
     }
 
 
@@ -48,14 +52,24 @@ public class PermisionDialog extends Dialog implements View.OnClickListener {
         check_point.setImageResource(R.drawable.point_unselect);
     }
 
+    /**
+     * 设置字符串
+     * @param dtat
+     */
+    public void setDtat(String dtat){
+        if (names!=null){
+            names.setText(dtat);
+        }
+    }
+
     private void setCheck(int  which){
         setAll();
         if (0==which){
             check_point_private.setImageResource(R.drawable.point_selected);
         }else if (1==which){
-
+            check_point_public.setImageResource(R.drawable.point_selected);
         }else {
-
+            check_point.setImageResource(R.drawable.point_selected);
         }
 
     }
@@ -64,11 +78,11 @@ public class PermisionDialog extends Dialog implements View.OnClickListener {
     public void onClick(View view) {
         int i = view.getId();
         if (i == R.id.check_point_private) {
-
+            setCheck(0);
         } else if (i == R.id.check_point_public) {
-
+            setCheck(1);
         } else if (i == R.id.check_point) {
-
+            setCheck(2);
         }
 
     }

@@ -138,15 +138,7 @@ public class ContactFragment extends BaseFragment {
      * 初始化数据库查询参数
      */
     private void init() {
-//        if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {// 没有权限。
-//            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), Manifest.permission.READ_CONTACTS)) {
-//                // 用户拒绝过这个权限了，应该提示用户，为什么需要这个权限。
-//                ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_CONTACTS}, 10000001);
-//            } else {
-//                // 申请授权。
-////                ActivityCompat.requestPermissions(getContext(), new String[]{Manifest.permission.READ_CONTACTS}, MMM);
-//            }
-//        }
+
         Uri uri = ContactsContract.Contacts.CONTENT_URI; // 联系人Uri；//ContactsContract.CommonDataKinds.Phone.CONTENT_URI
         // 查询的字段
         String[] projection = { ContactsContract.CommonDataKinds.Phone._ID,

@@ -12,4 +12,6 @@
     <color name="color_orange">#fa7a00</color>
     <color name="transparent">#00000000</color>
     <color name="default_line">#e4e4e4</color>
+
+    <color name="ijk_transparent_dark">#77000000</color>
 </resources>

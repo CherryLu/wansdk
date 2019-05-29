@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/black"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.wan.callring.ui.widget.VidewView2
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:background="#65000000"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国移动"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="3dp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13800138000"
+                android:textColor="#ebebeb"
+                android:textSize="15sp"
+                android:layout_marginBottom="3dp" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四川成都"
+                android:textColor="#ebebeb"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_jingyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="静音"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/icon_callshow_jingyin_n"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <ProgressBar
+        android:id="@+id/video_progressbar"
+        style="@android:style/Widget.Holo.ProgressBar.Small"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/ll_video_pb"/>
+
+    <ImageView
+        android:id="@+id/imageview_shelldow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"/>
+    <ImageView
+        android:id="@+id/iv_right_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/recommend_close"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+    <ImageView
+        android:id="@+id/iv_phone_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_callshow_phone_answser"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/transparent"/>
+</RelativeLayout>
