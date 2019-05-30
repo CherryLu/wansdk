@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
@@ -52,4 +52,5 @@ dependencies {
     implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.2'
     implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.2'
     implementation 'com.android.support:preference-v7:28.0.0'
+    implementation project(path: ':SmallVideoLib2')
 }

@@ -30,6 +30,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
+import com.android.internal.telephony.ITelephony;
 import com.wan.callring.R;
 import com.wan.callring.bean.Contact;
 import com.wan.callring.ui.widget.VidewView2;
@@ -533,13 +534,7 @@ public class PhoneTipController implements View.OnClickListener, View.OnTouchLis
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        LogOut.out(this, "answer call");
-//        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-//            acceptCall(mContext);
-//        } else {
-////            acceptCall_4_1(mContext);
-//            acceptCall(mContext);
-//        }
+
 
     }
 

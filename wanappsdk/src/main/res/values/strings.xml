@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">wanappsdk</string>
+    <string name="permission_denied">权限被拒绝</string>
 </resources>

@@ -13,6 +13,12 @@ import android.text.TextUtils;
 import android.util.Log;
 
 
+import com.wan.callring.bean.DetailsBean;
+import com.wan.callring.utils.HttpRequest;
+import com.wan.callring.utils.PhoneTipController;
+import com.wan.callring.utils.PhoneTipController2;
+import com.wan.callring.utils.Preferences;
+import com.wan.callring.utils.SystemUtil;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -66,29 +72,15 @@ public class PhoneService extends Service {
 			myPhone = Preferences.getString(Preferences.UserMobile,"");// UserManager.getInstance().getRegisterName();
 		}
 		Log.e(TAG, "onStartCommand myphone"+myPhone);
-//		if (Build.VERSION.SDK_INT < 18) {
-//			startForeground(GRAY_SERVICE_ID, new Notification());//API < 18 ，此方法能有效隐藏Notification上的图标
-//		} else {
-//			Intent innerIntent = new Intent(this, GrayInnerService.class);
-//			startService(innerIntent);
-//			startForeground(GRAY_SERVICE_ID, new Notification());
-//		}
-//		return START_STICKY;
-//		Intent notificationIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
-//		Notification noti = new Notification.Builder(this)
-//				.setContentTitle("Title")
-//				.setContentText("Message")
-//				.setSmallIcon(R.drawable.ic_launcher)
-//				.setContentIntent(pendingIntent)
-//				.build();
-//		startForeground(123456,noti);
+
 		flags = START_STICKY;
 		return super.onStartCommand(intent, flags, startId);
 	}
 
-	GetCallVideoInfoProtocol getCallVideoInfoProtocol;
+
 	private void getVideo(String phone){
-		Log.e(TAG, "getVideo"+phone);
+		//获取视频
+		/*Log.e(TAG, "getVideo"+phone);
 		requesphone = phone;
 		UpGetCallVideoData upGetCallVideoData = new UpGetCallVideoData();
 		upGetCallVideoData.sothermobile = phone;
@@ -98,7 +90,7 @@ public class PhoneService extends Service {
 			getCallVideoInfoProtocol.showWaitDialog();
 		}
 		getCallVideoInfoProtocol.stratDownloadThread(null, ServiceUri.Spcl, upGetCallVideoData, handler,true);
-		Log.e(TAG, "callShowGetVideoInfoProtocol=refresh");
+		Log.e(TAG, "callShowGetVideoInfoProtocol=refresh");*/
 	}
 	String callTime;
 	String videoName;
@@ -296,7 +288,7 @@ public class PhoneService extends Service {
 	}
 	DetailsBean detailsBean;
 	public static final int callstate=100000;
-	Handler handler = new Handler(){
+	/*Handler handler = new Handler(){
 		@Override
 		public void handleMessage(Message msg) {
 			super.handleMessage(msg);
@@ -433,7 +425,7 @@ public class PhoneService extends Service {
 
 			}
 		}
-	};
+	};*/
 
 	public String getTime(){
 		Date date = new Date();
@@ -470,35 +462,6 @@ public class PhoneService extends Service {
 		}).start();
 	}
 
-//	private void stateChanged(){
-//		Phone curPhone=cm.getPhone();
-//		//Phone的状态：RING,IDLE,OFFHOOK
-//		Phone.State state=cm.getState();
-//		//Call的状态
-//		Call.State callState=curPhone.getForgroundCall().getState();
-//		//电话状态的判断
-//		switch (callState) {
-//			case DIALING:
-//				//正在拨号
-//				break;
-//			case ACTIVE:
-//				//已经摘机
-//				break;
-//			case DISCONNECTED:
-//				//断开连接
-//			case IDLE:
-//				//挂断或者等待接听状态
-//				if(state==Phone.State.RING){
-//					//来电
-//				}else{
-//					//挂断
-//				}
-//				break;
-//
-//			default:
-//				break;
-//		}
-//
-//	}
+
 
 }

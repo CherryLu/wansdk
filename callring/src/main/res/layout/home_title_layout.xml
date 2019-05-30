@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="48dp"
+	android:background="#0f85dd">
+
+    <!-- 标题栏左边按钮 -->
+		<RelativeLayout
+			android:id="@+id/iv_head_user_menu"
+			android:layout_width="40dp"
+			android:layout_height="match_parent"
+			android:visibility="gone">
+			<ImageView
+				android:layout_width="16dp"
+				android:layout_height="16dp"
+				android:src="@mipmap/icon_user_menu"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="10dp"/>
+		</RelativeLayout>
+
+    <TextView
+            android:id="@+id/tv_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+		    android:maxLines="1"
+		    android:ellipsize="end"
+            android:text="发现"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    <!-- 右边按钮 -->
+	<FrameLayout
+		android:id="@+id/layoutContainer"
+		android:layout_width="200dp"
+		android:layout_height="30dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"
+		android:background="@drawable/bg_find_search_shape">
+
+		<TextView
+			android:id="@+id/et_search"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:background="@null"
+			android:drawableLeft="@mipmap/search"
+			android:drawablePadding="4dp"
+			android:layout_gravity="center_vertical"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:text="搜索视频彩铃"
+			android:paddingLeft="4dp"
+			android:paddingRight="40dp"
+			android:singleLine="true"
+			android:textColor="@color/white"
+			android:textSize="12sp" />
+
+		<ImageView
+			android:id="@+id/ivClearText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right|center_vertical"
+			android:padding="4dp"
+			android:src="@mipmap/clear_button"
+			android:visibility="invisible" />
+	</FrameLayout>
+
+</RelativeLayout>

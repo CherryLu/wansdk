@@ -1,2 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wan.callring" />
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wan.callring"
+    >
+
+    <service
+        android:name="com.wan.callring.service.PhoneService"
+        android:enabled="true"
+        tools:ignore="WrongManifestParent">
+        <intent-filter android:priority="1000" >
+            <action android:name="com.wan.callring.service.PhoneService" />
+        </intent-filter>
+    </service>
+
+
+</manifest>

@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:text="静音"
         android:drawablePadding="10dp"
-        android:drawableTop="@drawable/icon_callshow_jingyin_n"
+        android:drawableTop="@mipmap/icon_callshow_jingyin_n"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"/>
@@ -92,7 +92,7 @@
         android:id="@+id/iv_right_close"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:src="@drawable/recommend_close"
+        android:src="@mipmap/recommend_close"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"/>
@@ -100,7 +100,7 @@
         android:id="@+id/iv_phone_end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/icon_callshow_phone_answser"
+        android:src="@mipmap/icon_callshow_phone_answser"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"

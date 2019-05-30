@@ -2,7 +2,7 @@
 <!-- 全选按钮的图标 -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:state_checked="true"  android:drawable="@mipmap/news_s" />
-    <item android:state_checked="false" android:drawable="@mipmap/new" />
+    <item android:state_checked="false" android:drawable="@mipmap/news" />
 
 
 </selector>
